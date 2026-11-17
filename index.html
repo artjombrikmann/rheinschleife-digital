@@ -16,10 +16,11 @@
 <meta name="twitter:title" content="Rheinschleife digital">
 <meta name="twitter:description" content="Digitale Lösungen für Vereine und kleine Unternehmen rund um Boppard.">
 <meta name="twitter:image" content="https://www.rheinschleife-digital.de/assets/og-image.png">
-<meta name="theme-color" content="#0C3A5E">
+<meta name="theme-color" content="#0B2545">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<link rel="preload" href="assets/fonts/plus-jakarta-sans-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -27,7 +28,8 @@
   "@type": "ProfessionalService",
   "name": "Rheinschleife digital",
   "url": "https://www.rheinschleife-digital.de/",
-  "email": "artjom.brikmann@googlemail.com",
+  "logo": "https://www.rheinschleife-digital.de/assets/logo.png",
+  "email": "info@rheinschleife-digital.de",
   "areaServed": {
     "@type": "GeoCircle",
     "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 50.2311, "longitude": 7.5911 },
@@ -40,24 +42,41 @@
 </head>
 <body>
 
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.08-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.09-.44-4.37-1.2l-.31-.19-3.02.79.8-2.95-.2-.3A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.36-5.6c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.34-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41-.14-.01-.3-.01-.46-.01s-.42.06-.64.3c-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 3 3 5-6"/></symbol>
+    <symbol id="i-x-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4 2.5 20h19L12 4z"/><path d="M12 10v4M12 17.5v.01"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H9l-5 4V6a1 1 0 0 1 1-1z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-news" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3z"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4l2-2zM10 21h4"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></symbol>
+    <symbol id="i-live" viewBox="0 0 24 24"><path d="M3 12h4l3-7 4 14 3-7h4"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></symbol>
+    <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2.5" y="5" width="14" height="10" rx="1.5"/><path d="M6 19h7M9.5 15v4"/><rect x="18" y="9" width="4" height="9" rx="1"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 4v4M9 13v1M15 13v1"/></symbol>
+    <symbol id="i-timer" viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 10v4M9.5 2.5h5"/></symbol>
+    <symbol id="i-verified" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.2 7.8 8 9 4.8-1.2 8-4.5 8-9V6l-8-3z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+  </defs>
+</svg>
+
 <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
 
 <header class="site-header">
   <div class="wrap header-inner">
     <a href="#top" class="brand" aria-label="Rheinschleife digital, Startseite">
-      <svg class="brand-mark" viewBox="130 0 420 240" width="34" height="19" aria-hidden="true">
-        <path d="M160,175 C210,120 260,190 320,150 S 420,90 480,70" fill="none" stroke="#B0CDE0" stroke-width="26" stroke-linecap="round"/>
-        <circle cx="240" cy="42" r="16" fill="#1D6FA5"/>
-        <circle cx="300" cy="50" r="16" fill="#1D6FA5"/>
-        <circle cx="192" cy="98" r="16" fill="#1D6FA5"/>
-        <circle cx="160" cy="170" r="16" fill="#1D6FA5"/>
-        <circle cx="448" cy="170" r="16" fill="#1D6FA5"/>
-        <circle cx="400" cy="210" r="16" fill="#1D6FA5"/>
-        <circle cx="488" cy="90" r="16" fill="#1D6FA5"/>
-        <circle cx="512" cy="30" r="16" fill="#1D9E75"/>
-        <circle cx="352" cy="122" r="16" fill="#1D9E75"/>
-      </svg>
-      <span class="brand-name">Rheinschleife<span class="brand-tag">&lt;digital/&gt;</span></span>
+      <img class="brand-logo" src="assets/logo.png" alt="Rheinschleife &lt;DIGITAL/&gt;" width="139" height="40">
     </a>
 
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
@@ -65,13 +84,17 @@
       <span class="burger" aria-hidden="true"></span>
     </button>
 
-    <nav class="primary-nav" id="primaryNav">
+    <nav class="primary-nav" id="primaryNav" aria-label="Hauptnavigation">
       <a href="#leistungen">Leistungen</a>
+      <a href="#schichtmeisterapp">SchichtmeisterApp</a>
+      <a href="#projekte">Projekte</a>
       <a href="#ablauf">Ablauf</a>
-      <a href="#vereine">Für Vereine</a>
-      <a href="#haltung">Haltung</a>
+      <a href="#ueber-mich">Über mich</a>
       <a href="#kontakt">Kontakt</a>
-      <a class="nav-cta" href="https://wa.me/4915128864342" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-primary btn-sm" href="https://wa.me/4915128864342" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        WhatsApp Direkt
+      </a>
     </nav>
   </div>
 </header>
@@ -82,45 +105,143 @@
   <section class="hero" id="top">
     <div class="wrap hero-inner">
       <div class="hero-text">
-        <p class="eyebrow">&lt;für Vereine &amp; kleine Unternehmen/&gt;</p>
-        <h1>Digitale Lösungen,<br>die im Verein wirklich<br>genutzt werden.</h1>
+        <p class="status-pill">
+          <span class="status-dot" aria-hidden="true"></span>
+          &lt;für_vereine_und_lokale_betriebe/&gt; · Boppard &amp; Mittelrhein
+        </p>
+        <h1>Software &amp; Webseiten, die im Verein <span class="accent">wirklich genutzt</span> werden.</h1>
         <p class="hero-lead">
-          Ich baue moderne Webseiten, ein einfaches CMS für Vereine, die
-          SchichtmeisterApp für Helferschichten – und eigene Tools für alles,
-          was den Vereinsalltag sonst noch nervt. Ohne Schnickschnack, dafür
-          mit echtem Nutzen.
+          Schluss mit 48 WhatsApp-Nachrichten am Festwochenende, verstaubten CMS
+          und zeitraubender Zettelwirtschaft. Ich entwickle moderne Webseiten,
+          ein unkompliziertes Vereins-CMS und die <strong>SchichtmeisterApp</strong>
+          – direkt aus Boppard.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/4915128864342" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.08-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.09-.44-4.37-1.2l-.31-.19-3.02.79.8-2.95-.2-.3A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.36-5.6c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.34-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41-.14-.01-.3-.01-.46-.01s-.42.06-.64.3c-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
-            Direkt schreiben
+          <a class="btn btn-primary" href="https://wa.me/4915128864342?text=Hallo%20Artjom%2C%20ich%20habe%20eine%20Frage%20zu%20Rheinschleife%20digital" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Direkt per WhatsApp schreiben
           </a>
-          <a class="btn btn-outline" href="mailto:artjom.brikmann@googlemail.com">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <a class="btn btn-secondary" href="mailto:info@rheinschleife-digital.de">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
             Lieber per E-Mail
           </a>
         </div>
-        <p class="hero-meta">
-          Boppard &amp; Umgebung · ca. 50&nbsp;km Umkreis ·
-          <a class="inline-link" href="#leistungen">was ich baue ↓</a>
-        </p>
+        <div class="hero-meta">
+          <p class="meta-line">
+            <svg class="icon-sm" aria-hidden="true"><use href="#i-pin"/></svg>
+            Persönlich vor Ort · ca. 50&nbsp;km Umkreis um Boppard am Rhein
+          </p>
+          <div class="audience">
+            <span class="audience-label">Maßgeschneidert für:</span>
+            <span class="chip">⚽ Sportvereine</span>
+            <span class="chip">🎺 Musikvereine</span>
+            <span class="chip">🚒 Feuerwehr &amp; Rettung</span>
+            <span class="chip">🔨 Lokales Handwerk</span>
+          </div>
+        </div>
       </div>
 
-      <div class="hero-visual" aria-hidden="true">
-        <svg class="river-graphic" viewBox="0 0 640 420" width="100%" height="100%">
-          <path class="river-path" d="M40,300 C140,220 200,340 300,260 C380,200 400,240 480,160 C540,100 560,120 600,60"
-                fill="none" stroke="#B0CDE0" stroke-width="18" stroke-linecap="round"/>
-          <g class="river-dots">
-            <circle cx="70" cy="290" r="9" fill="#1D6FA5"><title>Sportverein</title></circle>
-            <circle cx="150" cy="230" r="9" fill="#1D6FA5"><title>Musikverein</title></circle>
-            <circle cx="230" cy="300" r="9" fill="#1D6FA5"><title>Feuerwehrverein</title></circle>
-            <circle cx="300" cy="260" r="11" fill="#1D9E75"><title>Rheinschleife digital</title></circle>
-            <circle cx="380" cy="205" r="9" fill="#1D6FA5"><title>Handwerksbetrieb</title></circle>
-            <circle cx="460" cy="175" r="9" fill="#1D6FA5"><title>Turnverein</title></circle>
-            <circle cx="540" cy="105" r="9" fill="#1D6FA5"><title>Angelverein</title></circle>
-            <circle cx="600" cy="60" r="11" fill="#1D9E75"><title>Dein Verein?</title></circle>
-          </g>
-        </svg>
+      <!-- Vorher/Nachher -->
+      <div class="sandbox">
+        <div class="sandbox-head">
+          <span class="dot" aria-hidden="true"></span>
+          <h2>Live-Vergleich</h2>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Vorher/Nachher">
+          <button class="tab" role="tab" id="tabChaos" data-sandbox="chaos" aria-selected="true" aria-controls="viewChaos">
+            <svg class="icon-sm" aria-hidden="true"><use href="#i-x-circle"/></svg>
+            Gestern: WhatsApp-Chaos
+          </button>
+          <button class="tab" role="tab" id="tabApp" data-sandbox="app" aria-selected="false" aria-controls="viewApp" tabindex="-1">
+            <svg class="icon-sm" aria-hidden="true"><use href="#i-check-circle"/></svg>
+            Heute: SchichtmeisterApp
+          </button>
+        </div>
+
+        <div class="panel" id="viewChaos" role="tabpanel" aria-labelledby="tabChaos">
+          <div class="msg">
+            <span class="msg-icon"><svg class="icon-sm" aria-hidden="true"><use href="#i-chat"/></svg></span>
+            <div>
+              <strong>WhatsApp Gruppe „Helfer Waldfest“ (64)</strong>
+              <p>„Kann Samstag doch erst ab 20:30 Uhr! Wer übernimmt bis dahin die Theke?? Bitte dringend melden!“</p>
+              <small>Samstag 17:42 Uhr · 9 ungelesene Antworten</small>
+            </div>
+          </div>
+          <div class="msg">
+            <span class="msg-icon"><svg class="icon-sm" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+            <div>
+              <strong>Unklare Standbelegung</strong>
+              <p>Excel-Tabelle auf dem Privathandy des 2. Vorsitzenden veraltet. 2 Helfer stehen gleichzeitig da, Sonntagmittag fehlt jeder.</p>
+            </div>
+          </div>
+          <div class="result result-bad">
+            <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>
+            Ergebnis: Frustrierte Vorstände &amp; leere Theken.
+          </div>
+        </div>
+
+        <div class="panel" id="viewApp" role="tabpanel" aria-labelledby="tabApp" hidden>
+          <div class="app-card">
+            <div class="app-card-top">
+              <span class="app-card-title">Bierstand · Schicht 2</span>
+              <span class="pill-green">+15 Punkte</span>
+            </div>
+            <div class="app-card-row">
+              <span>19:00 – 22:00 Uhr</span>
+              <span class="ok">2/2 Besetzt (Jan &amp; Sarah)</span>
+            </div>
+            <div class="bar" aria-hidden="true"><span></span></div>
+            <div class="app-card-foot">
+              <span>Automatische Erinnerung aktiv (SMS/Push)</span>
+              <span class="ok">Status: Gesichert</span>
+            </div>
+          </div>
+          <div class="cms-row">
+            <div>
+              <span class="badge-icon"><svg class="icon" aria-hidden="true"><use href="#i-news"/></svg></span>
+              <span>
+                <strong>1-Klick Spielbericht fertig</strong>
+                <small>Für Zeitung, Homepage &amp; Insta exportiert</small>
+              </span>
+            </div>
+            <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+          </div>
+          <div class="result result-good">
+            <svg class="icon" aria-hidden="true"><use href="#i-verified"/></svg>
+            Ergebnis: 100% besetzte Schichten &amp; entspannter Vorstand.
+          </div>
+        </div>
+
+        <div class="sandbox-foot">
+          <span>Rheinschleife App Suite</span>
+          <a class="text-link" href="https://www.schichtmeisterapp.de" target="_blank" rel="noopener">
+            schichtmeisterapp.de
+            <svg class="icon-sm" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KENNZAHLEN -->
+  <section class="stats" aria-label="Auf einen Blick">
+    <div class="wrap stats-grid">
+      <div class="stat">
+        <span class="stat-value">100%</span>
+        <span class="stat-label">Ehrenamts-erprobt aus eigener Erfahrung im Vorstand</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value green">&lt; 5 Min</span>
+        <span class="stat-label">Einarbeitungszeit für Vorstandsmitglieder &amp; Helfer</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">0 €</span>
+        <span class="stat-label">Versteckte Lizenz-Kostenfallen oder Agentur-Knebelverträge</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value green">50 km</span>
+        <span class="stat-label">Direkter Aktionsradius rund um Boppard &amp; Mittelrhein</span>
       </div>
     </div>
   </section>
@@ -128,200 +249,352 @@
   <!-- LEISTUNGEN -->
   <section class="section" id="leistungen">
     <div class="wrap">
-      <p class="eyebrow">&lt;leistungen/&gt;</p>
-      <h2>Vier Bausteine, ein Ziel: weniger Verwaltung, mehr Verein.</h2>
+      <div class="section-head">
+        <span class="eyebrow">&lt;leistungen_und_werkzeuge/&gt;</span>
+        <h2>Vier Bausteine, ein klares Ziel: Weniger Verwaltung, mehr Verein.</h2>
+        <p>Jedes Werkzeug löst genau ein echtes Problem im Alltag. Keine überladene All-in-One-Software, die niemand versteht.</p>
+      </div>
 
-      <div class="cards">
-        <article class="card">
-          <span class="card-index">01</span>
-          <h3>Webseiten für Vereine &amp; Unternehmen</h3>
-          <p>
-            Eine neue Internetseite, die zu euch passt – schnell, übersichtlich
-            und auf dem Handy genauso gut wie am Rechner. Kein Baukasten von
-            der Stange, sondern eine Seite, die aus eurem Verein oder Betrieb
-            entsteht.
-          </p>
+      <div class="bento">
+        <article class="module wide flagship" id="schichtmeisterapp">
+          <span class="module-glow" aria-hidden="true"></span>
+          <div>
+            <div class="module-top">
+              <span class="module-index">BAUSTEIN · 01</span>
+              <span class="module-badge">★ Highlight &amp; Live-Tool</span>
+            </div>
+            <h3>SchichtmeisterApp</h3>
+            <p>
+              Schluss mit dem WhatsApp-Chaos bei Waldfesten, Sportwochen und Jubiläen.
+              Die SchichtmeisterApp digitalisiert eure Helfereinteilung: Mitglieder tragen
+              sich unkompliziert per Smartphone ein, erhalten automatische Erinnerungen und
+              sammeln Wertpunkte für übernommene Schichten.
+            </p>
+            <ul class="feature-list">
+              <li><svg class="icon-sm" aria-hidden="true"><use href="#i-star"/></svg>Fairness durch Punktesystem</li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="#i-bell"/></svg>Automatische Erinnerungen</li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="#i-phone"/></svg>Kein App-Store-Download nötig</li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="#i-live"/></svg>Echtzeit-Übersicht für Vorstände</li>
+            </ul>
+          </div>
+          <div class="module-foot">
+            <a class="text-link" href="https://www.schichtmeisterapp.de" target="_blank" rel="noopener">
+              schichtmeisterapp.de live ausprobieren
+              <svg class="icon-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <span class="note">Web-App · Mobile ready</span>
+          </div>
         </article>
 
-        <article class="card">
-          <span class="card-index">02</span>
-          <h3>Vereins-CMS</h3>
-          <p>
-            Ein einfaches Redaktionssystem, mit dem euer Vorstand News,
-            Termine und Mannschaften selbst pflegt – ohne auf mich zu warten
-            und ohne Technikwissen.
-          </p>
+        <article class="module narrow">
+          <div>
+            <div class="module-top">
+              <span class="module-index">BAUSTEIN · 02</span>
+              <svg class="icon module-icon" aria-hidden="true"><use href="#i-layout"/></svg>
+            </div>
+            <h3>Schlankes Vereins-CMS</h3>
+            <p>
+              Ein einfaches Redaktionssystem, mit dem jeder Vorstand News, Spielansetzungen,
+              Termine und Hallenzeiten selbst aktualisieren kann – ohne auf mich zu warten
+              und ohne Programmier- oder WordPress-Kenntnisse.
+            </p>
+            <div class="mini-box">
+              <div class="row"><span>Bedienkomplexität</span><span>Minimal (1 Klick)</span></div>
+              <div class="meter" aria-hidden="true"><span></span></div>
+              <small>Garantiert ohne PHP-Updates oder zerschossene Layouts.</small>
+            </div>
+          </div>
+          <div class="module-foot"><span class="note green">Für News, Teams &amp; Sponsoren</span></div>
         </article>
 
-        <article class="card">
-          <span class="card-index">03</span>
-          <h3>SchichtmeisterApp</h3>
-          <p>
-            Schluss mit WhatsApp-Chaos bei Helferschichten. Anmelden, Punkte
-            sammeln, Prämien einlösen – alles digital und fair.
-          </p>
-          <a class="card-link" href="https://www.schichtmeisterapp.de" target="_blank" rel="noopener">
-            schichtmeisterapp.de →
-          </a>
+        <article class="module half">
+          <div>
+            <div class="module-top">
+              <span class="module-index">BAUSTEIN · 03</span>
+              <svg class="icon module-icon" aria-hidden="true"><use href="#i-devices"/></svg>
+            </div>
+            <h3>Webseiten für Vereine &amp; Betriebe</h3>
+            <p>
+              Kein Baukasten von der Stange, sondern eine maßgeschneiderte Internetseite, die zu
+              eurem Club oder Handwerksbetrieb passt. Schnell, absolut übersichtlich und auf dem
+              Smartphone genauso intuitiv wie am Desktop.
+            </p>
+            <ul class="check-list">
+              <li><svg class="icon-sm" aria-hidden="true"><use href="#i-check"/></svg>100% DSGVO-konform ohne Cookie-Banner-Wahnsinn</li>
+              <li><svg class="icon-sm" aria-hidden="true"><use href="#i-check"/></svg>Blitzschnelle Ladezeiten auch im ländlichen Mobilfunknetz</li>
+            </ul>
+          </div>
+          <div class="module-foot"><span class="note">Clean Code · Barrierearm</span></div>
         </article>
 
-        <article class="card">
-          <span class="card-index">04</span>
-          <h3>Presse- &amp; Social-Text-Generator</h3>
-          <p>
-            Ein Tool speziell für Vereine: aus ein paar Stichpunkten zum
-            Spiel oder Event werden fertige Pressetexte und
-            Instagram-Beiträge – für mehr Sichtbarkeit ohne Mehraufwand am
-            Sonntagabend.
-          </p>
+        <article class="module half">
+          <div>
+            <div class="module-top">
+              <span class="module-index">BAUSTEIN · 04</span>
+              <svg class="icon module-icon green" aria-hidden="true"><use href="#i-bot"/></svg>
+            </div>
+            <h3>Presse- &amp; Social-Text-Generator</h3>
+            <p>
+              Speziell für den Amateur- und Lokalsport: Aus ein paar schnellen Stichpunkten vom
+              Sonntagnachmittag (Torschützen, Halbzeitstand, Wetter) generiert das Tool fertige
+              Pressetexte für die Rhein-Zeitung und knackige Instagram-Captions.
+            </p>
+            <div class="code-sample">
+              <span>Input: „2:1 gewonnen, Tor 89. Min Noah, Platzregen“</span>
+              <b>→ 2 Artikel generiert</b>
+            </div>
+          </div>
+          <div class="module-foot"><span class="note green">Mehr Sichtbarkeit ohne Sonntagsfrust</span></div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- REFERENZ -->
-  <section class="section section-tinted" id="referenz">
+  <!-- PROBLEM-FINDER -->
+  <section class="section section-tinted" id="vereine">
     <div class="wrap">
-      <p class="eyebrow">&lt;referenz/&gt;</p>
-      <h2>Aus einem echten Vereinsproblem entstanden: die SchichtmeisterApp.</h2>
-
-      <div class="case-card">
-        <div class="case-block">
-          <span class="case-label">Problem</span>
-          <p>
-            Helferschichten liefen über WhatsApp-Gruppen: unübersichtlich,
-            doppelte Zusagen, am Ende wusste niemand mehr genau, wer wann
-            eingeteilt war.
-          </p>
-        </div>
-        <div class="case-block">
-          <span class="case-label">Lösung</span>
-          <p>
-            Eine App, in der Vereine Schichten anlegen, Mitglieder sich mit
-            einem Klick eintragen, Erinnerungen automatisch kommen und
-            Punkte für Prämien gesammelt werden.
-          </p>
-        </div>
-        <div class="case-block">
-          <span class="case-label">Ergebnis</span>
-          <p>
-            Weniger Rückfragen, eine klare Übersicht für den Vorstand und
-            spürbar mehr Motivation, sich für Schichten einzutragen.
-          </p>
-        </div>
+      <div class="section-head center">
+        <span class="eyebrow">&lt;smart_diagnose/&gt;</span>
+        <h2>Welches Problem nervt euch am meisten?</h2>
+        <p>Klickt auf euer Profil und erfahrt, wie wir euer Nadelöhr in wenigen Tagen schließen.</p>
       </div>
 
-      <a class="card-link" href="https://www.schichtmeisterapp.de" target="_blank" rel="noopener">
-        schichtmeisterapp.de ansehen →
-      </a>
+      <div class="pill-row" role="group" aria-label="Vereinsprofil wählen">
+        <button class="pill-btn" type="button" data-club="sport" aria-pressed="true">⚽ Sportverein &amp; Turnen</button>
+        <button class="pill-btn" type="button" data-club="musik" aria-pressed="false">🎺 Musik- &amp; Fanfarenzug</button>
+        <button class="pill-btn" type="button" data-club="feuerwehr" aria-pressed="false">🚒 Feuerwehrförderverein</button>
+        <button class="pill-btn" type="button" data-club="betrieb" aria-pressed="false">🔨 Lokaler Handwerksbetrieb</button>
+      </div>
+
+      <div class="finder" aria-live="polite">
+        <div class="finder-copy">
+          <span class="eyebrow" id="clubTag">&lt;fokus: sportverein/&gt;</span>
+          <h3 id="clubHeading">Helferplanung &amp; sonntägliche Presseberichte</h3>
+          <p id="clubDesc">Beim Sportfest fehlen immer dieselben Helfer am Grill. Gleichzeitig muss der Spielbericht spät abends noch an die Lokalsport-Redaktion geschickt werden.</p>
+          <div class="impact">
+            <svg class="icon" aria-hidden="true"><use href="#i-timer"/></svg>
+            <span id="clubImpact">Spart ca. 8–12 Stunden Organisationszeit pro Event</span>
+          </div>
+        </div>
+        <div class="finder-aside">
+          <strong>Empfohlenes Lösungspaket:</strong>
+          <div class="solution">
+            <svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>
+            <div>
+              <strong id="clubSol1">SchichtmeisterApp Integration</strong>
+              <small id="clubSol1Desc">Digitale Anmeldung ohne WhatsApp-Spam</small>
+            </div>
+          </div>
+          <div class="solution">
+            <svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>
+            <div>
+              <strong id="clubSol2">Presse- &amp; Social-Tool</strong>
+              <small id="clubSol2Desc">Spielbericht auf Knopfdruck um 18:00 Uhr</small>
+            </div>
+          </div>
+          <a class="btn btn-primary" id="clubCta" href="https://wa.me/4915128864342?text=Hallo%20Artjom%2C%20unser%20Sportverein%20moechte%20eine%20einfachere%20Loesung" target="_blank" rel="noopener">
+            Jetzt für unseren Verein anfragen
+            <svg class="icon-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJEKTE -->
+  <section class="section" id="projekte">
+    <div class="wrap">
+      <div class="section-head split">
+        <div>
+          <span class="eyebrow">&lt;praxisprojekte/&gt;</span>
+          <h2>Bisher für diese Websites umgesetzt.</h2>
+          <p>Zwei echte Beispiele aus der Praxis – einmal für einen lokalen Meisterbetrieb &amp; Pannendienst, einmal für einen traditionsreichen Sportverein.</p>
+        </div>
+        <span class="note">100% maßgeschneiderter Code</span>
+      </div>
+
+      <div class="projects">
+        <article class="project">
+          <div class="project-visual" aria-hidden="true">
+            <div class="browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span>service-vb.de</span></div>
+              <div class="browser-body dark">
+                <span class="tag-red">24/7 NOTRUF</span>
+                <h4>LKW-Panne im Raum Koblenz?</h4>
+                <p>Soforthilfe-CTA direkt im Hero &amp; klarer 3-Schritte-Ablauf</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div>
+              <div class="project-title">
+                <h3>VB Service Koblenz</h3>
+                <span class="tag-soft">Gewerbe &amp; Handwerk</span>
+              </div>
+              <p>Mobile LKW-Werkstatt &amp; Pannendienst rund um Koblenz und den Mittelrhein. Fokus auf sofortige Conversion bei Notfällen auf der A61/A48, klare Darstellung des Einsatzgebiets und transparenter Serviceablauf.</p>
+            </div>
+            <div class="project-foot">
+              <a class="text-link" href="https://www.service-vb.de" target="_blank" rel="noopener">
+                service-vb.de ansehen
+                <svg class="icon-sm" aria-hidden="true"><use href="#i-external"/></svg>
+              </a>
+              <span class="note">Mobil-optimiert für Fahrer</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-visual" aria-hidden="true">
+            <div class="browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span>ssvboppard.de</span></div>
+              <div class="browser-body light">
+                <div class="club-line"><span class="club-badge">SSV</span><strong>SSV Boppard 1920 e.V.</strong></div>
+                <p>Jugendabteilung · Senioren · SchichtmeisterApp Helferbereich integriert</p>
+                <span class="tag-mint">News-CMS aktiv</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div>
+              <div class="project-title">
+                <h3>SSV Boppard 1920 e.V.</h3>
+                <span class="tag-soft">Sportverein</span>
+              </div>
+              <p>Vollständiger Relaunch der traditionsreichen Vereinswebsite mit allen Mannschaften, Jugendförderung, Vorstand und regionalem Sponsorenbereich – inklusive nahtloser Anbindung an die SchichtmeisterApp für die Helferorganisation bei Heimspieltagen.</p>
+            </div>
+            <div class="project-foot">
+              <a class="text-link" href="https://www.ssvboppard.de" target="_blank" rel="noopener">
+                ssvboppard.de ansehen
+                <svg class="icon-sm" aria-hidden="true"><use href="#i-external"/></svg>
+              </a>
+              <span class="note">CMS &amp; Helferportal</span>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- ABLAUF -->
-  <section class="section" id="ablauf">
+  <section class="section section-tinted" id="ablauf">
     <div class="wrap">
-      <p class="eyebrow">&lt;ablauf/&gt;</p>
-      <h2>So läuft eine Zusammenarbeit ab.</h2>
+      <div class="section-head">
+        <span class="eyebrow">&lt;ablauf/&gt;</span>
+        <h2>So läuft unsere Zusammenarbeit ab.</h2>
+        <p>Pragmatisch, unkompliziert und ohne zeitraubende Agentur-Meetings. Wir konzentrieren uns auf das, was euch wirklich hilft.</p>
+      </div>
 
       <ol class="steps">
         <li class="step">
           <span class="step-num">01</span>
-          <h3>Anfrage</h3>
-          <p>Ihr schreibt mir kurz, was ihr braucht – per WhatsApp reicht ein Satz.</p>
+          <h3>Unverbindliche Anfrage</h3>
+          <p>Eine kurze Nachricht per WhatsApp oder E-Mail genügt. Schildert einfach in euren eigenen Worten, was in eurem Verein oder Betrieb aktuell am meisten Zeit und Nerven frisst.</p>
+          <span class="step-note">Dauer: 2 Minuten</span>
         </li>
         <li class="step">
           <span class="step-num">02</span>
-          <h3>Gespräch</h3>
-          <p>Wir klären gemeinsam Ziel, Umfang und Zeitrahmen – unverbindlich und ohne Fachchinesisch.</p>
+          <h3>Echtes Gespräch vor Ort</h3>
+          <p>Wir sprechen kurz telefonisch oder treffen uns direkt in Boppard / Mittelrhein. Wir klären präzise, was ihr wirklich braucht und wo Standardsoftware bisher versagt hat.</p>
+          <span class="step-note">Auf Augenhöhe · Kein Fachchinesisch</span>
         </li>
         <li class="step">
           <span class="step-num">03</span>
-          <h3>Umsetzung</h3>
-          <p>Ich baue, zeige euch Zwischenstände, und wir gehen gemeinsam live.</p>
+          <h3>Passgenaue Umsetzung</h3>
+          <p>Ich programmiere die Lösung, zeige regelmäßige Zwischenstände und liefere ein fertiges Werkzeug, das der gesamte Vorstand sofort im echten Vereinsalltag bedienen kann.</p>
+          <span class="step-note">Schnelle Einführung &amp; Support</span>
         </li>
       </ol>
     </div>
   </section>
 
-  <!-- EINLADUNG AN VEREINE -->
-  <section class="section section-tinted" id="vereine">
+  <!-- EINLADUNG -->
+  <section class="section" id="dialog">
     <div class="wrap">
-      <p class="eyebrow">&lt;einladung/&gt;</p>
-      <h2>Vereine im Umkreis von Boppard: Lasst uns gemeinsam was bauen.</h2>
-      <p class="section-lead">
-        Jeder Verein hat dieselben Probleme in einer anderen Ausprägung –
-        egal ob Sport, Musik, Feuerwehr oder Kultur. Mich interessiert nicht
-        nur, was ich schon gebaut habe, sondern was bei euch konkret hakt.
-        Schreibt mir, welches der folgenden Themen euch am meisten Zeit und
-        Nerven kostet – oder auch ein ganz anderes:
-      </p>
-
-      <ul class="tag-list">
-        <li>#whatsapp-chaos</li>
-        <li>#mitgliederverwaltung</li>
-        <li>#nachwuchsgewinnung</li>
-        <li>#pressearbeit</li>
-        <li>#foerderantraege</li>
-        <li>#dsgvo-unsicherheit</li>
-        <li>#veraltete-webseite</li>
-        <li>#helferplanung</li>
-      </ul>
-
-      <div class="invite-box">
-        <p>
-          Mein Ziel: coole Software bauen, die im Verein wirklich ankommt –
-          so wie die SchichtmeisterApp entstanden ist: aus einem ganz
-          konkreten Problem im Vereinsalltag. Egal welcher Verein, egal
-          welches Problem – meldet euch.
-        </p>
-        <a class="btn btn-primary" href="https://wa.me/4915128864342?text=Hallo%20Artjom%2C%20unser%20Verein%20hat%20folgendes%20Problem%3A%20" target="_blank" rel="noopener">
-          Problem schildern per WhatsApp
-        </a>
+      <div class="invite">
+        <div class="invite-main">
+          <span class="eyebrow">&lt;einladung_zum_dialog/&gt;</span>
+          <h2>Vereine im Mittelrheintal: Lasst uns gemeinsam was bauen.</h2>
+          <p>Jeder Verein hat dieselben Probleme in anderer Ausprägung. Mich interessiert nicht nur, was ich schon gebaut habe, sondern was bei euch konkret hakt. Wählt das Thema, das euch am meisten Schlaf raubt:</p>
+          <ul class="topics" aria-label="Themen">
+            <li><button class="topic-btn" type="button" aria-pressed="false">#whatsapp-chaos</button></li>
+            <li><button class="topic-btn" type="button" aria-pressed="false">#mitgliederverwaltung</button></li>
+            <li><button class="topic-btn" type="button" aria-pressed="false">#nachwuchsgewinnung</button></li>
+            <li><button class="topic-btn" type="button" aria-pressed="false">#pressearbeit</button></li>
+            <li><button class="topic-btn" type="button" aria-pressed="false">#foerderantraege</button></li>
+            <li><button class="topic-btn" type="button" aria-pressed="false">#dsgvo-unsicherheit</button></li>
+            <li><button class="topic-btn" type="button" aria-pressed="false">#veraltete-webseite</button></li>
+            <li><button class="topic-btn" type="button" aria-pressed="false">#helferplanung</button></li>
+          </ul>
+        </div>
+        <div class="invite-card">
+          <span class="label">Mein persönliches Ziel</span>
+          <blockquote>„Software bauen, die im Vereinsalltag wirklich ankommt – genau so ist die SchichtmeisterApp entstanden.“</blockquote>
+          <p>Egal welcher Verein, egal welches Nadelöhr – schildert mir einfach kurz euer Problem.</p>
+          <a class="btn btn-primary" id="topicWhatsAppLink" href="https://wa.me/4915128864342?text=Hallo%20Artjom%2C%20unser%20Verein%20hat%20folgendes%20Problem%3A%20" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Problem direkt per WhatsApp schildern
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- HALTUNG -->
-  <section class="section" id="haltung">
-    <div class="wrap wrap-narrow">
-      <p class="eyebrow">&lt;haltung/&gt;</p>
-      <blockquote class="quote">
-        „Mir geht es darum, coole Software zu bauen, die im Vereinsalltag
-        wirklich gebraucht wird.“
-      </blockquote>
-      <p class="quote-attribution">Artjom Brikmann · Rheinschleife digital</p>
-      <p class="section-lead">
-        Ich war selbst ehrenamtlich aktiv – als Jugendtrainer und zeitweise
-        als kommissarischer Geschäftsführer in einem Verein. Dabei hat sich
-        gezeigt: Vereine brauchen keine komplizierte Software, sondern
-        einfache Lösungen für echte, alltägliche Probleme.
-      </p>
+  <!-- ÜBER MICH -->
+  <section class="section section-tinted" id="ueber-mich">
+    <div class="wrap">
+      <div class="about">
+        <span class="eyebrow">&lt;haltung_und_herkunft/&gt;</span>
+        <blockquote>„Mir geht es darum, coole Software zu bauen, die im Vereinsalltag wirklich gebraucht wird.“</blockquote>
+        <div class="person">
+          <span class="avatar" aria-hidden="true">AB</span>
+          <div>
+            <strong>Artjom Brikmann</strong>
+            <span>Gründer · Rheinschleife digital</span>
+          </div>
+        </div>
+        <p>Ich war selbst über Jahre ehrenamtlich aktiv – unter anderem als Jugendtrainer und zeitweise als kommissarischer Geschäftsführer in einem lokalen Verein. Dabei hat sich gezeigt: Ehrenamtler brauchen keine überzüchtete Unternehmenssoftware, sondern intuitive, verlässliche Helfer für echte Probleme.</p>
+      </div>
     </div>
   </section>
 
   <!-- KONTAKT -->
-  <section class="section section-dark" id="kontakt">
+  <section class="section cta-section" id="kontakt">
     <div class="wrap">
-      <p class="eyebrow eyebrow-light">&lt;kontakt/&gt;</p>
-      <h2 class="light">Reden kostet nichts. Am besten per WhatsApp.</h2>
-      <p class="section-lead light">
-        Egal ob konkrete Anfrage, vage Idee oder nur eine Frage –
-        meldet euch einfach.
-      </p>
+      <div class="cta">
+        <div class="cta-head">
+          <span class="eyebrow eyebrow-light">&lt;direkter_kontakt/&gt;</span>
+          <h2>Reden kostet nichts. Am besten per WhatsApp.</h2>
+          <p>Egal ob konkrete Anfrage, vage Idee für euer nächstes Fest oder nur eine Frage zur SchichtmeisterApp – meldet euch einfach direkt bei mir.</p>
+        </div>
 
-      <div class="contact-grid">
-        <a class="contact-item" href="https://wa.me/4915128864342" target="_blank" rel="noopener">
-          <span class="contact-label">WhatsApp</span>
-          <span class="contact-value">0151 2886 4342</span>
-        </a>
-        <a class="contact-item" href="mailto:artjom.brikmann@googlemail.com">
-          <span class="contact-label">E-Mail</span>
-          <span class="contact-value">artjom.brikmann@googlemail.com</span>
-        </a>
-        <a class="contact-item" href="https://www.instagram.com/rheinschleifedigital/" target="_blank" rel="noopener">
-          <span class="contact-label">Instagram</span>
-          <span class="contact-value">@rheinschleifedigital</span>
-        </a>
+        <div class="contact-grid">
+          <a class="contact-item primary" href="https://wa.me/4915128864342" target="_blank" rel="noopener">
+            <span class="contact-top">WhatsApp Direkt <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+            <span>
+              <span class="contact-value">0151 2886 4342</span>
+              <small>Schnellste Rückmeldung</small>
+            </span>
+          </a>
+          <a class="contact-item" href="mailto:info@rheinschleife-digital.de">
+            <span class="contact-top">E-Mail <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span>
+              <span class="contact-value small">info@rheinschleife-digital.de</span>
+              <small>Für ausführliche Anfragen</small>
+            </span>
+          </a>
+          <a class="contact-item" href="https://www.instagram.com/rheinschleifedigital/" target="_blank" rel="noopener">
+            <span class="contact-top">Instagram <svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg></span>
+            <span>
+              <span class="contact-value">@rheinschleifedigital</span>
+              <small>Einblicke in aktuelle Projekte</small>
+            </span>
+          </a>
+        </div>
+
+        <div class="cta-foot">
+          <span>Rheinschleife digital · Artjom Brikmann · Boppard am Rhein</span>
+          <span class="accent-mint">Verlässliche Handwerksqualität für Software</span>
+        </div>
       </div>
     </div>
   </section>
@@ -330,7 +603,10 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <p>© <span id="year"></span> Artjom Brikmann · Rheinschleife digital</p>
+    <div>
+      <p>© <span id="year"></span> Artjom Brikmann · Rheinschleife digital</p>
+      <p class="footer-loc"><svg class="icon-sm" aria-hidden="true"><use href="#i-pin"/></svg>Standort Boppard am Rhein</p>
+    </div>
     <nav class="footer-nav" aria-label="Rechtliches">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
