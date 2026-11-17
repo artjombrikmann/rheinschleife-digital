@@ -689,3 +689,4 @@ img, svg { max-width: 100%; }
 .hero-inner > *, .finder > *, .invite > * { min-width: 0; }
 .status-pill { max-width: 100%; }
 body { overflow-x: hidden; }
+.browser-shot { flex: 1; width: 100%; min-height: 0; object-fit: cover; object-position: top; display: block; background: var(--card); }
