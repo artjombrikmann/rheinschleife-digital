@@ -55,8 +55,8 @@ const clubProfiles = {
   sport: {
     tag: '<fokus: sportverein/>',
     heading: 'Helferplanung & sonntägliche Presseberichte',
-    desc: 'Beim Sportfest fehlen immer dieselben Helfer am Grill. Gleichzeitig muss der Spielbericht spät abends noch an die Lokalsport-Redaktion geschickt werden.',
-    impact: 'Spart ca. 8–12 Stunden Organisationszeit pro Event',
+    desc: 'Beim Sportfest fehlen oft dieselben Helfer am Grill. Gleichzeitig muss der Spielbericht spät abends noch an die Lokalsport-Redaktion geschickt werden.',
+    impact: 'Kann viele Stunden Organisationszeit pro Event sparen',
     sol1: 'SchichtmeisterApp Integration',
     sol1Desc: 'Digitale Anmeldung ohne WhatsApp-Spam',
     sol2: 'Presse- & Social-Tool',
@@ -67,18 +67,18 @@ const clubProfiles = {
     tag: '<fokus: musikverein/>',
     heading: 'Konzert-Helfer & Proben-Terminkoordination',
     desc: 'Auf- und Abbau beim Jahreskonzert sowie Thekendienste werden auf zu viele Schultern verteilt oder bleiben am Vorstand hängen.',
-    impact: 'Entlastet den Festausschuss vollständig',
+    impact: 'Entlastet den Festausschuss spürbar',
     sol1: 'SchichtmeisterApp mit Bonuspunkten',
     sol1Desc: 'Transparente Belohnung für aktive Musiker',
     sol2: 'Termin-Widget für die Website',
-    sol2Desc: 'Öffentliche Auftritte immer aktuell',
+    sol2Desc: 'Öffentliche Auftritte leicht aktuell halten',
     msg: 'Hallo Artjom, unser Musikverein sucht digitale Unterstützung'
   },
   feuerwehr: {
     tag: '<fokus: feuerwehrverein/>',
     heading: 'Tag der offenen Tür & Nachwuchsgewinnung',
     desc: 'Für das Feuerwehrfest müssen dutzende Schichten koordiniert werden. Gleichzeitig braucht die Jugendfeuerwehr eine frische Online-Präsenz.',
-    impact: 'Lückenlose Schichtplanung für das ganze Fest',
+    impact: 'Übersichtliche Schichtplanung für das ganze Fest',
     sol1: 'SchichtmeisterApp Einsatzfest',
     sol1Desc: 'Einfache Einteilung für alle Kameraden',
     sol2: 'Moderne Webseite mit CMS',
@@ -88,12 +88,12 @@ const clubProfiles = {
   betrieb: {
     tag: '<fokus: handwerksbetrieb/>',
     heading: 'Notdienst-Anfragen & mobile Erreichbarkeit',
-    desc: 'Kunden rufen am Wochenende an oder suchen mobil nach schneller Hilfe. Eine klare, saubere Website ohne Schnickschnack filtert Notrufe sofort.',
+    desc: 'Kunden rufen am Wochenende an oder suchen mobil nach schneller Hilfe. Eine klare, saubere Website ohne Schnickschnack hilft, dass Notfall-Anfragen schnell ankommen.',
     impact: 'Direkte Neukunden & klare Erreichbarkeit',
     sol1: 'Mobil-first Express-Webseite',
     sol1Desc: 'Notruf-CTA direkt auf dem Handy-Bildschirm',
     sol2: 'Lokale Auffindbarkeit für Boppard & Koblenz',
-    sol2Desc: 'Bei der Suche vor Ort zuverlässig gefunden werden',
+    sol2Desc: 'Besser bei der Suche vor Ort gefunden werden',
     msg: 'Hallo Artjom, ich habe einen Handwerksbetrieb in der Region'
   }
 };
