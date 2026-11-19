@@ -286,7 +286,7 @@ img, svg { max-width: 100%; }
 .audience { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .audience-label { font-size: 13px; font-weight: 600; color: var(--muted); margin-right: 4px; }
 .chip {
-  display: inline-block;
+  display: inline-flex; align-items: center; gap: 6px;
   padding: 4px 10px;
   border-radius: 999px;
   background: var(--card);
@@ -434,7 +434,7 @@ img, svg { max-width: 100%; }
 .module.flagship .module-index { color: var(--green-text); }
 .module-icon { color: var(--muted); }
 .module-icon.green { color: var(--green); }
-.module-badge { padding: 4px 12px; border-radius: 999px; background: var(--mint); color: #00573C; font-family: var(--font-mono); font-size: 12px; font-weight: 600; }
+.module-badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; background: var(--mint); color: #00573C; font-family: var(--font-mono); font-size: 12px; font-weight: 600; }
 .module h3 { font-size: 1.5rem; letter-spacing: -0.01em; margin-bottom: 12px; }
 .module p { color: var(--ink-2); line-height: 1.65; }
 .module-glow {
@@ -481,6 +481,7 @@ img, svg { max-width: 100%; }
 /* ---------- Problem-Finder ---------- */
 .pill-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 40px; }
 .pill-btn {
+  display: inline-flex; align-items: center; gap: 8px;
   padding: 10px 20px; border-radius: 999px;
   background: var(--card); color: var(--ink-2);
   border: 1px solid var(--border); box-shadow: var(--shadow-1);
@@ -690,3 +691,5 @@ img, svg { max-width: 100%; }
 .status-pill { max-width: 100%; }
 body { overflow-x: hidden; }
 .browser-shot { flex: 1; width: 100%; min-height: 0; object-fit: cover; object-position: top; display: block; background: var(--card); }
+
+.chip .icon-sm { color: var(--green-text); }

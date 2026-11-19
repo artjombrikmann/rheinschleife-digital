@@ -67,6 +67,10 @@
     <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2.5" y="5" width="14" height="10" rx="1.5"/><path d="M6 19h7M9.5 15v4"/><rect x="18" y="9" width="4" height="9" rx="1"/></symbol>
     <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 4v4M9 13v1M15 13v1"/></symbol>
     <symbol id="i-timer" viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 10v4M9.5 2.5h5"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-1.04 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98 1.04 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+    <symbol id="i-siren" viewBox="0 0 24 24"><path d="M7 18v-6a5 5 0 1 1 10 0v6"/><path d="M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z"/><path d="M21 12h1"/><path d="M18.5 4.5 18 5"/><path d="M2 12h1"/><path d="M12 2v1"/><path d="m4.929 4.929.707.707"/><path d="M12 12v6"/></symbol>
+    <symbol id="i-hammer" viewBox="0 0 24 24"><path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"/></symbol>
     <symbol id="i-verified" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.2 7.8 8 9 4.8-1.2 8-4.5 8-9V6l-8-3z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
   </defs>
 </svg>
@@ -133,10 +137,10 @@
           </p>
           <div class="audience">
             <span class="audience-label">Maßgeschneidert für:</span>
-            <span class="chip">⚽ Sportvereine</span>
-            <span class="chip">🎺 Musikvereine</span>
-            <span class="chip">🚒 Feuerwehr &amp; Rettung</span>
-            <span class="chip">🔨 Lokales Handwerk</span>
+            <span class="chip"><svg class="icon-sm" aria-hidden="true"><use href="#i-trophy"/></svg>Sportvereine</span>
+            <span class="chip"><svg class="icon-sm" aria-hidden="true"><use href="#i-music"/></svg>Musikvereine</span>
+            <span class="chip"><svg class="icon-sm" aria-hidden="true"><use href="#i-siren"/></svg>Feuerwehr &amp; Rettung</span>
+            <span class="chip"><svg class="icon-sm" aria-hidden="true"><use href="#i-hammer"/></svg>Lokales Handwerk</span>
           </div>
         </div>
       </div>
@@ -261,7 +265,7 @@
           <div>
             <div class="module-top">
               <span class="module-index">BAUSTEIN · 01</span>
-              <span class="module-badge">★ Highlight &amp; Live-Tool</span>
+              <span class="module-badge"><svg class="icon-sm" aria-hidden="true"><use href="#i-star"/></svg>Highlight &amp; Live-Tool</span>
             </div>
             <h3>SchichtmeisterApp</h3>
             <p>
@@ -360,10 +364,10 @@
       </div>
 
       <div class="pill-row" role="group" aria-label="Vereinsprofil wählen">
-        <button class="pill-btn" type="button" data-club="sport" aria-pressed="true">⚽ Sportverein &amp; Turnen</button>
-        <button class="pill-btn" type="button" data-club="musik" aria-pressed="false">🎺 Musik- &amp; Fanfarenzug</button>
-        <button class="pill-btn" type="button" data-club="feuerwehr" aria-pressed="false">🚒 Feuerwehrförderverein</button>
-        <button class="pill-btn" type="button" data-club="betrieb" aria-pressed="false">🔨 Lokaler Handwerksbetrieb</button>
+        <button class="pill-btn" type="button" data-club="sport" aria-pressed="true"><svg class="icon-sm" aria-hidden="true"><use href="#i-trophy"/></svg>Sportverein &amp; Turnen</button>
+        <button class="pill-btn" type="button" data-club="musik" aria-pressed="false"><svg class="icon-sm" aria-hidden="true"><use href="#i-music"/></svg>Musik- &amp; Fanfarenzug</button>
+        <button class="pill-btn" type="button" data-club="feuerwehr" aria-pressed="false"><svg class="icon-sm" aria-hidden="true"><use href="#i-siren"/></svg>Feuerwehrförderverein</button>
+        <button class="pill-btn" type="button" data-club="betrieb" aria-pressed="false"><svg class="icon-sm" aria-hidden="true"><use href="#i-hammer"/></svg>Lokaler Handwerksbetrieb</button>
       </div>
 
       <div class="finder" aria-live="polite">
