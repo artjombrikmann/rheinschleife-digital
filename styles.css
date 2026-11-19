@@ -695,3 +695,6 @@ body { overflow-x: hidden; }
 .chip .icon-sm { color: var(--green-text); }
 .footer-brand { display: flex; flex-direction: column; gap: 12px; }
 .footer-logo { display: block; height: 33px; width: auto; }
+.module-top { flex-wrap: wrap; }
+.module-index { white-space: nowrap; }
+.module-badge { white-space: nowrap; }
