@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rheinschleife digital – Webseiten &amp; digitale Lösungen für Vereine und kleine Unternehmen</title>
+<title>Rheinschleife digital: Webseiten &amp; digitale Lösungen für Vereine und kleine Unternehmen in Boppard</title>
 <meta name="description" content="Moderne Webseiten, ein einfaches Vereins-CMS, die SchichtmeisterApp und ein Presse-Textgenerator für Vereine – gebaut von Artjom Brikmann in Boppard. Für Vereine und kleine Unternehmen im Umkreis von 50 km.">
 <link rel="canonical" href="https://www.rheinschleife-digital.de/">
 <meta property="og:title" content="Rheinschleife digital">
@@ -17,6 +17,7 @@
 <meta name="twitter:description" content="Digitale Lösungen für Vereine und kleine Unternehmen rund um Boppard.">
 <meta name="twitter:image" content="https://www.rheinschleife-digital.de/assets/og-image.png">
 <meta name="theme-color" content="#0F172A">
+<link rel="icon" href="assets/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
@@ -25,18 +26,37 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Rheinschleife digital",
-  "url": "https://www.rheinschleife-digital.de/",
-  "logo": "https://www.rheinschleife-digital.de/assets/logo.png",
-  "email": "info@rheinschleife-digital.de",
-  "areaServed": {
-    "@type": "GeoCircle",
-    "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 50.2311, "longitude": 7.5911 },
-    "geoRadius": "50000"
-  },
-  "founder": { "@type": "Person", "name": "Artjom Brikmann" },
-  "sameAs": ["https://www.instagram.com/rheinschleifedigital/"]
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.rheinschleife-digital.de/#org",
+      "name": "Rheinschleife digital",
+      "url": "https://www.rheinschleife-digital.de/",
+      "logo": "https://www.rheinschleife-digital.de/assets/logo.png",
+      "email": "info@rheinschleife-digital.de",
+      "address": { "@type": "PostalAddress", "addressLocality": "Boppard", "postalCode": "56154", "addressCountry": "DE" },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 50.2311, "longitude": 7.5911 },
+        "geoRadius": "50000"
+      },
+      "founder": { "@type": "Person", "name": "Artjom Brikmann" },
+      "sameAs": [
+        "https://www.instagram.com/rheinschleifedigital/",
+        "https://www.instagram.com/schichtmeisterartjom/"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "SchichtmeisterApp",
+      "url": "https://www.schichtmeisterapp.de/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "de",
+      "description": "Digitale Helferplanung für Vereine mit Schicht-Marktplatz, automatischen Erinnerungen und Punktesystem.",
+      "provider": { "@id": "https://www.rheinschleife-digital.de/#org" }
+    }
+  ]
 }
 </script>
 </head>
@@ -115,7 +135,7 @@
         </p>
         <h1>Software &amp; Webseiten, die im Verein <span class="accent">wirklich genutzt</span> werden.</h1>
         <p class="hero-lead">
-          Schluss mit 48 WhatsApp-Nachrichten am Festwochenende, verstaubten CMS
+          Weniger WhatsApp-Nachrichten am Festwochenende, verstaubten CMS
           und zeitraubender Zettelwirtschaft. Ich entwickle moderne Webseiten,
           ein unkompliziertes Vereins-CMS und die <strong>SchichtmeisterApp</strong>
           – direkt aus Boppard.
@@ -150,6 +170,7 @@
         <div class="sandbox-head">
           <span class="dot" aria-hidden="true"></span>
           <h2>Live-Vergleich</h2>
+          <span class="sandbox-tag">Beispiel / Symbolbild</span>
         </div>
 
         <div class="tabs" role="tablist" aria-label="Vorher/Nachher">
@@ -181,7 +202,7 @@
           </div>
           <div class="result result-bad">
             <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>
-            Ergebnis: Frustrierte Vorstände &amp; leere Theken.
+            Beispiel: Frustrierte Vorstände &amp; leere Theken.
           </div>
         </div>
 
@@ -197,7 +218,7 @@
             </div>
             <div class="bar" aria-hidden="true"><span></span></div>
             <div class="app-card-foot">
-              <span>Automatische Erinnerung aktiv (SMS/Push)</span>
+              <span>Automatische Erinnerung aktiv</span>
               <span class="ok">Status: Gesichert</span>
             </div>
           </div>
@@ -213,12 +234,12 @@
           </div>
           <div class="result result-good">
             <svg class="icon" aria-hidden="true"><use href="#i-verified"/></svg>
-            Ergebnis: Besetzte Schichten &amp; entspannter Vorstand.
+            Beispiel: Besetzte Schichten &amp; entspannter Vorstand.
           </div>
         </div>
 
         <div class="sandbox-foot">
-          <span>Rheinschleife App Suite</span>
+          <span>SchichtmeisterApp, ein Produkt von Rheinschleife digital</span>
           <a class="text-link" href="https://www.schichtmeisterapp.de" target="_blank" rel="noopener">
             schichtmeisterapp.de
             <svg class="icon-sm" aria-hidden="true"><use href="#i-external"/></svg>
@@ -268,8 +289,9 @@
               <span class="module-badge"><svg class="icon-sm" aria-hidden="true"><use href="#i-star"/></svg>Highlight &amp; Live-Tool</span>
             </div>
             <h3>SchichtmeisterApp</h3>
+            <p class="product-of">Ein Produkt von <strong>Rheinschleife digital</strong> · eigene Webseite: <a href="https://www.schichtmeisterapp.de" target="_blank" rel="noopener">schichtmeisterapp.de</a></p>
             <p>
-              Schluss mit dem WhatsApp-Chaos bei Waldfesten, Sportwochen und Jubiläen.
+              Weniger WhatsApp-Chaos bei Waldfesten, Sportwochen und Jubiläen.
               Die SchichtmeisterApp digitalisiert eure Helfereinteilung: Mitglieder tragen
               sich unkompliziert per Smartphone ein, erhalten automatische Erinnerungen und
               sammeln Wertpunkte für übernommene Schichten.
@@ -377,7 +399,7 @@
           <p id="clubDesc">Beim Sportfest fehlen oft dieselben Helfer am Grill. Gleichzeitig muss der Spielbericht spät abends noch an die Lokalsport-Redaktion geschickt werden.</p>
           <div class="impact">
             <svg class="icon" aria-hidden="true"><use href="#i-timer"/></svg>
-            <span id="clubImpact">Kann viele Stunden Organisationszeit pro Event sparen</span>
+            <span id="clubImpact">Kann den Organisationsaufwand pro Event verringern (Erfahrungswert)</span>
           </div>
         </div>
         <div class="finder-aside">
@@ -604,11 +626,15 @@
         <img class="footer-logo" src="assets/logo.png" alt="Rheinschleife &lt;DIGITAL/&gt;" width="116" height="33" loading="lazy">
       </a>
       <p>© <span id="year"></span> Artjom Brikmann · Rheinschleife digital</p>
+      <p>Anbieter der Webseiten rheinschleife-digital.de und schichtmeisterapp.de sowie der SchichtmeisterApp.</p>
       <p class="footer-loc"><svg class="icon-sm" aria-hidden="true"><use href="#i-pin"/></svg>Standort Boppard am Rhein</p>
     </div>
     <nav class="footer-nav" aria-label="Rechtliches">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
+      <a href="https://www.schichtmeisterapp.de" target="_blank" rel="noopener">Zur SchichtmeisterApp (schichtmeisterapp.de)</a>
+      <a href="https://www.instagram.com/rheinschleifedigital/" target="_blank" rel="noopener">Instagram @rheinschleifedigital</a>
+      <a href="https://www.instagram.com/schichtmeisterartjom/" target="_blank" rel="noopener">Instagram @schichtmeisterartjom</a>
     </nav>
   </div>
 </footer>

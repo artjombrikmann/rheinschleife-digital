@@ -698,3 +698,10 @@ body { overflow-x: hidden; }
 .module-top { flex-wrap: wrap; }
 .module-index { white-space: nowrap; }
 .module-badge { white-space: nowrap; }
+
+/* Kennzeichnungen */
+.sandbox-tag { margin-left: auto; font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: var(--ink-2); border: 1px solid var(--ink-2); border-radius: 999px; padding: 2px 10px; }
+.product-of { font-size: 14px; margin: 0 0 12px; }
+.product-of a { font-weight: 600; }
+.todo { background: #fff3a3; color: #5c4a00; padding: 0 4px; border-radius: 4px; font-weight: 700; }
+.footer-nav { flex-wrap: wrap; }
